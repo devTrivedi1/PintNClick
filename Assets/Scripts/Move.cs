@@ -53,6 +53,6 @@ public class Move : MonoBehaviour
 
 		Quaternion rot = Quaternion.LookRotation(direction);
 		transform.rotation = Quaternion.Slerp(transform.rotation, rot, Time.deltaTime);
-		transform.position += transform.forward * 20 * Time.deltaTime;
+		
 	}
 }
